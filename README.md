@@ -51,10 +51,9 @@ Sigue las instrucciones en pantalla para:
 - Personalizar el nombre del archivo (por defecto, el archivo se llamará codigo-qr.png).
 - Una vez completados los pasos, el código QR se generará y se guardará en el directorio actual.
 
-BEGIN RAW DESCRIPTION
-![image](https://github.com/user-attachments/assets/2d9a6818-037f-4951-9a2a-72f2df0aaecd)
+![QRico Example](https://github.com/user-attachments/assets/2d9a6818-037f-4951-9a2a-72f2df0aaecd)
 
 Ejemplo de QR creado con QRico.
-END RAW DESCRIPTION
+
 
 ¡Disfruta creando códigos QR únicos con QRico!
