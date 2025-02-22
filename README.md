@@ -1,17 +1,13 @@
 # QRico
-
 **QRico** es una herramienta interactiva para generar códigos QR personalizados desde la terminal. Utiliza un script en Bash que invoca un bloque en Python para aprovechar la librería `qrcode` y `Pillow`. Con **QRico** podrás transformar fácilmente cualquier URL o texto en un código QR único, eligiendo interactivamente sus colores y el nombre del archivo de salida.
 
 ## Características
-
 - **Interactividad Total:** Configura todos los parámetros del código QR de forma interactiva.
-- **Validación de Entradas:** Solo se aceptan respuestas válidas en cada paso (por ejemplo, únicamente S/N para opciones clave).
 - **Personalización Completa:** Elige entre varias opciones de colores para el relleno y el fondo del código QR.
 - **Salida Colorida:** Una interfaz con mensajes en color que mejora la experiencia en la terminal.
 - **Fácil de Usar:** Un único script que integra Bash y Python para generar el código QR en pocos pasos.
 
 ## Requisitos
-
 - **Bash:** Compatible con Linux, macOS o entornos similares.
 - **Python 3:** Versión 3.6 o superior.
 - **Librerías Python:**
@@ -19,7 +15,6 @@
   - `Pillow`
 
 Para instalar las dependencias de Python, ejecuta:
-
 ```bash
 pip install qrcode
 ```
