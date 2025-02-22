@@ -32,7 +32,7 @@ cd QRico
 
 Asegúrate de que el script tenga permisos de ejecución:
 ```
-chmod +x qr_generator.sh
+chmod +x qrico.sh
 ```
 
 ## Uso
