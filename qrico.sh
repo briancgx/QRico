@@ -12,6 +12,30 @@ YELLOW=$'\033[1;33m'
 RED=$'\033[0;31m'
 NC=$'\033[0m'  # Sin color
 
+# Banner personalizado
+echo -e "${GREEN}"
+echo -e "                                                  
+                        ██                        
+  ░████░   ██████▒      ██                        
+  ██████   ███████▓     ██                        
+ ▒██  ██▒  ██   ▒██                               
+ ██▒  ▒██  ██    ██   ████       ▓████▒   ░████░  
+ ██    ██  ██   ▒██   ████      ███████  ░██████░ 
+ ██    ██  ███████▒     ██     ▓██▒  ▒█  ███  ███ 
+ ██    ██  ██████▓      ██     ██░       ██░  ░██ 
+ ██    ██  ██  ▓██░     ██     ██        ██    ██ 
+ ██▒  ▒██  ██   ██▓     ██     ██░       ██░  ░██ 
+ ▒██  ██▓  ██   ▒██     ██     ▓██▒  ░█  ███  ███ 
+  ██████░  ██    ██▒ ████████   ███████  ░██████░ 
+  ░█████   ██    ███ ████████    ▓████▒   ░████░  
+     ░██▒                                         
+      ░█"
+echo -e "${NC}"
+echo -e "${CYAN}  Bienvenido a QRico, tu generador de códigos QR fácil y rápido.${NC}"
+echo -e "${CYAN}  ========================================================${NC}"
+echo -e "${YELLOW}  Creado por: briancgx${NC}"
+echo -e ""
+
 # Función para seleccionar una opción numérica
 seleccionar_opcion() {
     local mensaje="$1"
@@ -84,7 +108,7 @@ if [[ "$respuesta_modificar" == "1" ]]; then
             num=$((i+1))
             echo -e "  ${RED}[${NC}${num}${RED}]${NC} ${available_colors[$i]^}"
         done
-        read -r -p "${YELLOW}Ingresa el número correspondiente: ${NC}" fondo_index
+        read -r -p "${YELLOW}Ingresa el número correspondiente: ${NC}" fondo_index   
         if [[ "$fondo_index" =~ ^[1-7]$ ]]; then
             fondo=${color_map[${available_colors[$((fondo_index-1))]}]}
             break
